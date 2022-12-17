@@ -1,0 +1,47 @@
+
+
+
+
+ALTER table aula.cliente add column phone varchar(50) not null;
+
+alter table aua.cliente modify nr_cpf varchar(50); 
+
+
+
+create table cliente (
+	nm_cliente VARCHAR(50),
+	dt_nascimento DATE,
+	nr_cpf VARCHAR(50),
+	phone VARCHAR(50)
+);
+insert into cliente (nm_cliente, dt_nascimento, nr_cpf, phone) values ('Gerick', '2022-05-09', 2005, '770-745-9353');
+insert into cliente (nm_cliente, dt_nascimento, nr_cpf, phone) values ('Leupold', '2022-02-18', 2006, null);
+insert into cliente (nm_cliente, dt_nascimento, nr_cpf, phone) values ('Lynnet', '2022-08-01', 2000, '234-173-3330');
+insert into cliente (nm_cliente, dt_nascimento, nr_cpf, phone) values ('Maurise', '2022-11-12', 2002, '369-192-6690');
+insert into cliente (nm_cliente, dt_nascimento, nr_cpf, phone) values ('Reinhold', '2022-03-17', 1984, '110-354-9518');
+insert into cliente (nm_cliente, dt_nascimento, nr_cpf, phone) values ('Bengt', '2022-02-17', 2008, '787-650-4770');
+insert into cliente (nm_cliente, dt_nascimento, nr_cpf, phone) values ('Creighton', '2022-01-29', 2012, null);
+insert into cliente (nm_cliente, dt_nascimento, nr_cpf, phone) values ('Sonny', '2022-04-05', 1979, '167-589-9768');
+insert into cliente (nm_cliente, dt_nascimento, nr_cpf, phone) values ('Lexis', '2022-06-07', 2006, '825-264-0137');
+insert into cliente (nm_cliente, dt_nascimento, nr_cpf, phone) values ('Mikael', '2022-02-28', 1994, null);
+
+-- site mockaroo gerador de dados para inserir em tabelas: https://www.mockaroo.com/
+
+-- select <lista de colunas> from <tabela> where <filtro>
+
+
+select *
+from aula.cliente 
+where phone is not 
+
+
+
+create table aula.produto (
+	cd_produto int auto_increment primary key,
+    nm_produto varchar(70) not null,
+    dt_vencimento date not null,
+    dt_compra date,
+    dt_criacao datetime default now()
+    vl_produto decimal(10,2)
+);
+
